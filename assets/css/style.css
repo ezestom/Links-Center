@@ -122,7 +122,7 @@ a {
      color: var(--text-color);
      transition: .4s;
      list-style-type: none;
-     font-size: 2rem;
+     font-size: 1.5rem;
 }
 .list:hover{
   transition: .5s;
@@ -133,10 +133,11 @@ a {
 
 }
 h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--first-color)
 }
+
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 /* .container {
