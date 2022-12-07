@@ -139,12 +139,12 @@ h1{
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+/* .container {
   max-width: 968px;
   margin-left: var(--mb-1);
   margin-right: var(--mb-1);
 
-}
+} */
 
  
 
@@ -332,6 +332,7 @@ h1{
     display: flex;   
     justify-content: center; 
     align-items: flex-end;
+    padding-top: 10%;
   }
 
   }
