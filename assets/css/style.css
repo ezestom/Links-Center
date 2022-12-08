@@ -16,7 +16,7 @@
 
   /*========== Font and typography ==========*/
   --body-font: 'Space Grotesk', sans-serif;
-  --biggest-font-size: 3rem;
+  --biggest-font-size: 2rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
@@ -35,14 +35,14 @@
   --z-tooltip: 10;
 }
 
-@media screen and (min-width: 968px) {
+/* @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 3.5rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
     --tiny-font-size: .75rem;
   }
-}
+} */
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
@@ -107,14 +107,19 @@ a {
 /*=============== TEXT ===============*/
 .landing{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   width: 600px;
+  justify-content: space-between;
 }
 
 .title{
      transition: .4s;
      font-size: 3rem;
+}
+.list .list-a{
+  color: var(--text-color);
+  font-size: 1.75rem;
+  
 }
 .list{
      font-family: var(--body-font);
@@ -122,9 +127,9 @@ a {
      color: var(--text-color);
      transition: .4s;
      list-style-type: none;
-     font-size: 1.5rem;
+     font-size: 2rem;
 }
-.list:hover{
+.list .list-a:hover{
   transition: .5s;
   color: var(--first-color)
 }
@@ -283,6 +288,10 @@ h1{
 .clock__logo:hover {
   color: var(--first-color);
 }
+.clock___text{
+  padding-top: 5%;
+}
+
 
 .clock__text {
   display: flex;
@@ -309,6 +318,8 @@ h1{
 }
 
 
+
+
 /*=============== MEDIA QUERIES ===============*/
 /* For large devices */
 @media screen and (min-width: 968px) {
@@ -333,7 +344,7 @@ h1{
     display: flex;   
     justify-content: center; 
     align-items: flex-end;
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
   }
