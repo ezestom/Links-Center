@@ -6,7 +6,7 @@
 :root {
   /*========== Colors ==========*/
   --hue-color: 240;
-  
+
   --indigo: hsl(277, 94%, 28%);
   --han-purple: hsl(250, 72%, 51%);
   --gradient-1: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
@@ -101,7 +101,7 @@ a {
 
 /*=============== TEXT ===============*/
 
-.box{
+.box {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,6 +109,7 @@ a {
   gap: 5%;
 
 }
+
 .landing {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +161,9 @@ h1 {
   font-weight: 300;
   color: var(--first-color);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /*=============== CLOCK ===============*/
