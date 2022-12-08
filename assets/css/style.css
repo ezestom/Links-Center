@@ -166,6 +166,12 @@ h1 {
   align-content: center;
 }
 
+.ri-arrow-drop-right-line,
+.ri-arrow-drop-left-line {
+  display: flex;
+  align-items: center;
+}
+
 /*=============== CLOCK ===============*/
 
 .clock__circle {
