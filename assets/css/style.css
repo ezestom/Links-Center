@@ -6,8 +6,12 @@
 :root {
   /*========== Colors ==========*/
   --hue-color: 240;
+  
+  --indigo: hsl(277, 94%, 28%);
+  --han-purple: hsl(250, 72%, 51%);
+  --gradient-1: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
 
-  --first-color: hsl(var(--hue-color), 53%, 49%);
+  --first-color: #004dff;
   --title-color: hsl(var(--hue-color), 53%, 15%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
   --text-color-light: hsl(var(--hue-color), 12%, 65%);
@@ -35,15 +39,6 @@
   --z-tooltip: 10;
 }
 
-/* @media screen and (min-width: 968px) {
-  :root {
-    --biggest-font-size: 3.5rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-    --tiny-font-size: .75rem;
-  }
-} */
-
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue-color), 12%, 95%);
@@ -59,8 +54,8 @@ body.dark-theme {
   display: flex;
   padding: .25rem;
   border-radius: 50%;
-  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), 
-              inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
+    inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
   color: var(--first-color);
   cursor: pointer;
   transition: .4s;
@@ -68,15 +63,15 @@ body.dark-theme {
 
 /*========== Box shadow Dark theme ==========*/
 .dark-theme .clock__circle {
-  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1), 
-              -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), 
-              inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), 
-              inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
+    -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+    inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+    inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
 }
 
 .dark-theme .clock__theme {
-  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), 
-              inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
+    inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
 }
 
 /*=============== BASE ===============*/
@@ -87,7 +82,7 @@ body.dark-theme {
 }
 
 body {
-  
+
   margin: 0;
   font-family: var(--body-font);
   background-color: var(--body-color);
@@ -105,55 +100,67 @@ a {
 }
 
 /*=============== TEXT ===============*/
-.landing{
+
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+
+}
+.landing {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
   justify-content: space-between;
 }
 
-.title{
-     transition: .4s;
-     font-size: 3rem;
+.title {
+  transition: .4s;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.list .list-a{
+
+.list .list-a {
   color: var(--text-color);
-  font-size: 1.75rem;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
-.list{
-     font-family: var(--body-font);
-     background-color: var(--body-color);
-     color: var(--text-color);
-     transition: .4s;
-     list-style-type: none;
-     font-size: 2rem;
+
+.list {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s;
+  list-style-type: none;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.list .list-a:hover{
+
+.list .list-a:hover {
   transition: .5s;
   color: var(--first-color)
 }
-.navbar{
+
+.navbar {
   flex-wrap: wrap;
 
 }
-h1{
+
+h1 {
   font-size: 2rem;
   font-weight: 300;
-  color: var(--first-color)
+  color: var(--first-color);
+  text-align: center;
 }
-
-
-/*=============== REUSABLE CSS CLASSES ===============*/
-/* .container {
-  max-width: 968px;
-  margin-left: var(--mb-1);
-  margin-right: var(--mb-1);
-
-} */
-
- 
-
 
 /*=============== CLOCK ===============*/
 
@@ -161,10 +168,10 @@ h1{
   position: relative;
   width: 200px;
   height: 200px;
-  box-shadow: -6px -6px 16px var(--white-color), 
-              6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1), 
-              inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1), 
-              inset -6px -6px 16px var(--white-color);
+  box-shadow: -6px -6px 16px var(--white-color),
+    6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset -6px -6px 16px var(--white-color);
   border-radius: 50%;
   justify-self: center;
   display: flex;
@@ -178,9 +185,9 @@ h1{
   row-gap: 3.5rem;
 }
 
-.clock__twelve, 
-.clock__three, 
-.clock__six, 
+.clock__twelve,
+.clock__three,
+.clock__six,
 .clock__nine {
   position: absolute;
   width: 1rem;
@@ -188,7 +195,7 @@ h1{
   background-color: var(--text-color-light);
 }
 
-.clock__twelve, 
+.clock__twelve,
 .clock__six {
   transform: translateX(-50%) rotate(90deg);
 }
@@ -222,8 +229,8 @@ h1{
   z-index: var(--z-tooltip);
 }
 
-.clock__hour, 
-.clock__minutes, 
+.clock__hour,
+.clock__minutes,
 .clock__seconds {
   position: absolute;
   display: flex;
@@ -288,7 +295,8 @@ h1{
 .clock__logo:hover {
   color: var(--first-color);
 }
-.clock___text{
+
+.clock___text {
   padding-top: 5%;
 }
 
@@ -298,7 +306,7 @@ h1{
   justify-content: center;
 }
 
-.clock__text-hour, 
+.clock__text-hour,
 .clock__text-minutes {
   font-size: var(--biggest-font-size);
   color: var(--title-color);
@@ -308,7 +316,7 @@ h1{
   font-size: 60%;
   color: var(--title-color);
   font-weight: var(--font-medium);
-  
+
 }
 
 .clock__date {
@@ -327,25 +335,28 @@ h1{
     margin-left: auto;
     margin-right: auto;
   }
+
   .clock__logo {
     margin-bottom: 3rem;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .landing{
+  .landing {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .clock__content.grid{  
+
+  .clock__content.grid {
     flex-direction: column;
   }
-  .clock-circle-box{
-    display: flex;   
-    justify-content: center; 
+
+  .clock-circle-box {
+    display: flex;
+    justify-content: center;
     align-items: flex-end;
     padding-top: 5%;
   }
 
-  }
-
+}

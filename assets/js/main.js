@@ -1,3 +1,6 @@
+/*==================== OPEN ====================*/
+
+
 /*==================== CLOCK ====================*/
 const hour = document.getElementById("clock-hour"),
 	minutes = document.getElementById("clock-minutes"),
@@ -15,7 +18,7 @@ const clock = () => {
 	minutes.style.transform = `rotateZ(${mm}deg)`;
 	seconds.style.transform = `rotateZ(${ss}deg)`;
 };
-setInterval(clock, 1000); // 1000 = 1s
+setInterval(clock, 0); // 1000 = 1s
 
 /*==================== CLOCK & DATE TEXT ====================*/
 const textHour = document.getElementById("text-hour"),
@@ -94,7 +97,7 @@ const clockText = () => {
 	dateMonth.innerHTML = `${months[month]},`;
 	dateYear.innerHTML = year;
 };
-setInterval(clockText, 1000); // 1000 = 1s
+setInterval(clockText, 0); // 1000 = 1s
 
 /*==================== DARK/LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
