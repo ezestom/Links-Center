@@ -1,4 +1,5 @@
-# 🛰️Links-Center with html, css and js📡
+#📡 Links-Center + Clock
+ 🧑‍💻 Building with html, css and js
  ✅ Dark and Light mode
 
 ![image](https://user-images.githubusercontent.com/100095709/206730564-671dee49-6097-436f-b2c4-c465d69048cc.png)
