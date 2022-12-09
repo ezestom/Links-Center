@@ -1,7 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -11,7 +12,7 @@
   --han-purple: hsl(250, 72%, 51%);
   --gradient-1: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
 
-  --first-color: #004dff;
+  --first-color: hsl(250, 72%, 51%);
   --title-color: hsl(var(--hue-color), 53%, 15%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
   --text-color-light: hsl(var(--hue-color), 12%, 65%);
@@ -26,7 +27,7 @@
   --tiny-font-size: .625rem;
 
   /*========== Font weight ==========*/
-  --font-medium: 500;
+  --font-medium: 700;
 
   /*========== Margenes Bottom ==========*/
   --mb-0-25: .25rem;
@@ -123,6 +124,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: var(--gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:bold;
 }
 
 .list .list-a {
@@ -147,8 +153,12 @@ a {
 }
 
 .list .list-a:hover {
-  transition: .5s;
-  color: var(--first-color)
+  transition: .3s;  font-size: 2rem;
+  background-image: var(--gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .navbar {
@@ -157,19 +167,15 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 300;
-  color: var(--first-color);
+  font-size: 2.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-content: center;
-}
+  background-image: var(--gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-.ri-arrow-drop-right-line,
-.ri-arrow-drop-left-line {
-  display: flex;
-  align-items: center;
 }
 
 /*=============== CLOCK ===============*/
@@ -307,7 +313,7 @@ h1 {
 }
 
 .clock___text {
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
 

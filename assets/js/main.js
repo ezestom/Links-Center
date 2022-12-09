@@ -141,7 +141,7 @@ window.addEventListener('load', function(){
 
     for(let i = 0; buttons.length; i++){
         buttons[i].addEventListener('click', function(){
-            this.style.color = 'var(--first-color'
+            this.style.color = 'grey'
         })
     }
 })
