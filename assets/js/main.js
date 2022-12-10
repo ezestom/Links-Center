@@ -1,6 +1,5 @@
 /*==================== OPEN ====================*/
 
-
 /*==================== CLOCK ====================*/
 const hour = document.getElementById("clock-hour"),
 	minutes = document.getElementById("clock-minutes"),
@@ -43,9 +42,9 @@ const clockText = () => {
 	// We change the hours from 24 to 12 hours and establish whether it is AM or PM
 	if (hh >= 12) {
 		hh = hh - 12;
-		ampm = "PM";
+		ampm = " PM";
 	} else {
-		ampm = "AM";
+		ampm = " AM";
 	}
 
 	// We detect when it's 0 AM and transform to 12 AM
@@ -135,17 +134,12 @@ themeButton.addEventListener("click", () => {
 	localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
+window.addEventListener("load", function () {
+	let buttons = document.querySelectorAll(".list-a");
 
-window.addEventListener('load', function(){
-    let buttons = document.querySelectorAll('.list-a')
-
-    for(let i = 0; buttons.length; i++){
-        buttons[i].addEventListener('click', function(){
-            this.style.color = 'grey'
-        })
-    }
-})
-
-
-
-
+	for (let i = 0; buttons.length; i++) {
+		buttons[i].addEventListener("click", function () {
+			this.style.color = "grey";
+		});
+	}
+});

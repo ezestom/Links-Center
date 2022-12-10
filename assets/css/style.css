@@ -1,8 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -25,9 +26,6 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
-
-  /*========== Font weight ==========*/
-  --font-medium: 700;
 
   /*========== Margenes Bottom ==========*/
   --mb-0-25: .25rem;
@@ -83,7 +81,6 @@ body.dark-theme {
 }
 
 body {
-
   margin: 0;
   font-family: var(--body-font);
   background-color: var(--body-color);
@@ -102,41 +99,32 @@ a {
 
 /*=============== TEXT ===============*/
 
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-
-}
 
 .landing {
   display: flex;
-  flex-wrap: wrap;
-  width: 600px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
 }
 
 .title {
   transition: .4s;
   font-size: 3rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   background-image: var(--gradient-1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight:bold;
+  line-height: 3.5rem;
 }
 
 .list .list-a {
   color: var(--text-color);
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
 }
 
 .list {
@@ -148,33 +136,36 @@ a {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.list .list-a:hover {
-  transition: .3s;  font-size: 2rem;
-  background-image: var(--gradient-1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.navbar {
   flex-wrap: wrap;
 
 }
 
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
+.list .list-a:hover {
+  transition: .3s;
+  font-size: 2rem;
+  background-image: var(--gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
   display: flex;
+  flex-direction: column;
+}
+
+
+.name {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
   background-image: var(--gradient-1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 2.5rem;
 
 }
 
@@ -313,7 +304,7 @@ h1 {
 }
 
 .clock___text {
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 
@@ -322,15 +313,9 @@ h1 {
   justify-content: center;
 }
 
-.clock__text-hour,
-.clock__text-minutes {
-  font-size: var(--biggest-font-size);
-  color: var(--title-color);
-}
+
 
 .clock__text-ampm {
-  font-size: 60%;
-  color: var(--title-color);
   font-weight: var(--font-medium);
 
 }
@@ -353,16 +338,19 @@ h1 {
   }
 
   .clock__logo {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+
+
   .landing {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
+
 
   .clock__content.grid {
     flex-direction: column;
@@ -372,7 +360,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 5%;
+    
   }
 
 }
