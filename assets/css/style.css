@@ -91,6 +91,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -98,7 +100,12 @@ a {
 }
 
 /*=============== TEXT ===============*/
-
+.line{
+  width: 540px;
+  height: 1px;
+  background: var(--gradient-1);
+  margin: 50px;  
+}
 
 .landing {
   display: flex;
@@ -360,6 +367,12 @@ a {
     justify-content: center;
     align-items: flex-end;
 
+  }
+  .line{
+    width: 100vw;
+    height: 1px;
+    background: var(--gradient-1);
+    margin: 20px;
   }
 
 }
