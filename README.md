@@ -2,8 +2,8 @@
  🧑‍💻 Building with html, css and js
  ✅ Dark and Light mode
 
-![image](https://user-images.githubusercontent.com/100095709/206827227-3185460a-aca8-4131-9791-c7bbb80d5948.png)
+![image](https://user-images.githubusercontent.com/100095709/207211926-6562a170-1e81-491a-bfff-04d913baa614.png)
 
-![image](https://user-images.githubusercontent.com/100095709/206827268-5c19ac69-3c47-476c-bf93-4e26bc624161.png)
+![image](https://user-images.githubusercontent.com/100095709/207211964-8f809797-53b1-4bae-aa2d-b48f923f3183.png)
 
 
