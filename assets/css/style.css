@@ -1,8 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600&family=Space+Grotesk&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 
@@ -16,23 +16,23 @@
 
   --first-color: hsl(250, 72%, 51%);
   --title-color: hsl(var(--hue-color), 53%, 15%);
-  --text-color: hsl(var(--hue-color), 12%, 35%);
+  --text-color:#65647C  ;
   --text-color-light: hsl(var(--hue-color), 12%, 65%);
   --white-color: #fff;
   --body-color: #eeeeee;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Space Grotesk', sans-serif;
+  --body-font: 'Oxanium', sans-serif;
   --biggest-font-size: 2rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
 
   /*========== Margenes Bottom ==========*/
-  --mb-0-25: .25rem;
+  /* --mb-0-25: .25rem;
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
-  --mb-2-5: 2.5rem;
+  --mb-2-5: 2.5rem; */
 
   /*========== z index ==========*/
   --z-normal: 1;
@@ -42,7 +42,7 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue-color), 12%, 95%);
-  --text-color: hsl(var(--hue-color), 12%, 75%);
+  --text-color: var(--white-color);
   --body-color: hsl(var(--hue-color), 10%, 16%);
 }
 
@@ -83,7 +83,7 @@ body.dark-theme {
 
 body {
   margin: 0;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--body-font);
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s;
@@ -94,6 +94,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-weight: 600;
 }
 
 a {
@@ -130,12 +131,10 @@ a {
 .list .list-a {
   color: var(--text-color);
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .list {
-  font-family: var(--body-font);
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s;
@@ -145,6 +144,7 @@ a {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  font-weight: 300;
 
 }
 
