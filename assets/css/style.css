@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600&family=Space+Grotesk&display=swap');
 
@@ -8,31 +8,17 @@
 
 :root {
   /*========== Colors ==========*/
-  --hue-color: 240;
-
   --indigo: hsl(277, 94%, 28%);
   --han-purple: hsl(250, 72%, 51%);
   --gradient-1: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
 
   --first-color: hsl(250, 72%, 51%);
-  --title-color: hsl(var(--hue-color), 53%, 15%);
-  --text-color:#65647C  ;
-  --text-color-light: hsl(var(--hue-color), 12%, 65%);
+  --text-color: #65647C;  
   --white-color: #fff;
-  --body-color: #eeeeee;
+  --body-color: #fff;
 
   /*========== Font and typography ==========*/
   --body-font: 'Oxanium', sans-serif;
-  --biggest-font-size: 2rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  --tiny-font-size: .625rem;
-
-  /*========== Margenes Bottom ==========*/
-  /* --mb-0-25: .25rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2-5: 2.5rem; */
 
   /*========== z index ==========*/
   --z-normal: 1;
@@ -43,7 +29,7 @@
 body.dark-theme {
   --title-color: hsl(var(--hue-color), 12%, 95%);
   --text-color: var(--white-color);
-  --body-color: hsl(var(--hue-color), 10%, 16%);
+  --body-color: black;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -54,25 +40,19 @@ body.dark-theme {
   display: flex;
   padding: .25rem;
   border-radius: 50%;
-  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
-    inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
-  color: var(--first-color);
   cursor: pointer;
   transition: .4s;
+  border: solid 1px var(--han-purple);
+  color: var(--han-purple);
 }
+
 
 /*========== Box shadow Dark theme ==========*/
 .dark-theme .clock__circle {
-  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
-    -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
-    inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
-    inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
+  border: solid 1px var(--han-purple)
 }
 
-.dark-theme .clock__theme {
-  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
-    inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
-}
+
 
 /*=============== BASE ===============*/
 * {
@@ -102,11 +82,11 @@ a {
 }
 
 /*=============== TEXT ===============*/
-.line{
+.line {
   width: 540px;
   height: 1px;
   background: var(--gradient-1);
-  margin: 50px;  
+  margin: 50px;
 }
 
 .landing {
@@ -182,21 +162,13 @@ a {
   position: relative;
   width: 200px;
   height: 200px;
-  box-shadow: -6px -6px 16px var(--white-color),
-    6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
-    inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
-    inset -6px -6px 16px var(--white-color);
   border-radius: 50%;
   justify-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: .4s;
-}
-
-.clock__content {
-  align-self: center;
-  row-gap: 3.5rem;
+  border: solid 1px var(--han-purple)
 }
 
 .clock__twelve,
@@ -206,7 +178,7 @@ a {
   position: absolute;
   width: 1rem;
   height: 1px;
-  background-color: var(--text-color-light);
+  background-color: var(--han-purple)
 }
 
 .clock__twelve,
@@ -296,15 +268,6 @@ a {
   z-index: var(--z-normal);
 }
 
-.clock__logo {
-  width: max-content;
-  justify-self: center;
-  margin-bottom: var(--mb-2-5);
-  font-size: var(--smaller-font-size);
-  font-weight: var(--font-medium);
-  color: var(--text-color-light);
-  transition: .3s;
-}
 
 .clock__logo:hover {
   color: var(--first-color);
@@ -314,17 +277,9 @@ a {
   padding-top: 5%;
 }
 
-
 .clock__text {
   display: flex;
   justify-content: center;
-}
-
-
-
-.clock__text-ampm {
-  font-weight: var(--font-medium);
-
 }
 
 .clock__date {
@@ -333,9 +288,6 @@ a {
   font-weight: var(--font-medium);
 }
 
-
-
-
 /*=============== MEDIA QUERIES ===============*/
 /* For large devices */
 @media screen and (min-width: 968px) {
@@ -343,21 +295,15 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .clock__logo {
-    margin-bottom: 1rem;
-  }
 }
 
 @media screen and (max-width: 600px) {
-
 
   .landing {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 
   .clock__content.grid {
     flex-direction: column;
@@ -369,7 +315,8 @@ a {
     align-items: flex-end;
 
   }
-  .line{
+
+  .line {
     width: 100vw;
     height: 1px;
     background: var(--gradient-1);
