@@ -13,7 +13,7 @@
   --gradient-1: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
 
   --first-color: hsl(250, 72%, 51%);
-  --text-color: #65647C;  
+  --text-color: #65647C;
   --white-color: #fff;
   --body-color: #fff;
 
@@ -46,13 +46,10 @@ body.dark-theme {
   color: var(--han-purple);
 }
 
-
 /*========== Box shadow Dark theme ==========*/
 .dark-theme .clock__circle {
   border: solid 1px var(--han-purple)
 }
-
-
 
 /*=============== BASE ===============*/
 * {
@@ -125,7 +122,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   font-weight: 300;
-
 }
 
 .list .list-a:hover {
@@ -153,7 +149,6 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 2.5rem;
-
 }
 
 /*=============== CLOCK ===============*/
@@ -313,7 +308,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
   }
 
   .line {
