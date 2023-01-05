@@ -3,6 +3,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600&family=Poppins&family=Space+Grotesk&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 
@@ -10,8 +11,7 @@
   /*========== Colors ==========*/
   --indigo: hsl(277, 94%, 28%);
   --han-purple: hsl(250, 72%, 51%);
-  --gradient-1: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
-
+  --gradient-1: linear-gradient( 141deg, rgba(191, 102, 255, 1) 0%, rgba(98, 72, 255, 1) 50%, rgba(0, 221, 235, 1) 100% );
   --first-color: hsl(250, 72%, 51%);
   --text-color: #65647C;
   --white-color: #fff;
@@ -42,13 +42,13 @@ body.dark-theme {
   border-radius: 50%;
   cursor: pointer;
   transition: .4s;
-  border: solid 1px var(--han-purple);
-  color: var(--han-purple);
+  border: solid 1px rgba(98, 72, 255, 1);
+  color: rgba(98, 72, 255, 1);
 }
 
 /*========== Box shadow Dark theme ==========*/
 .dark-theme .clock__circle {
-  border: solid 1px var(--han-purple)
+  border: solid 1px rgba(98, 72, 255, 1);
 }
 
 /*=============== BASE ===============*/
@@ -82,7 +82,7 @@ a {
 .line {
   width: 540px;
   height: 1px;
-  background: var(--gradient-1);
+  background: rgba(98, 72, 255, 1);
   margin: 50px;
 }
 
@@ -163,7 +163,7 @@ a {
   justify-content: center;
   align-items: center;
   transition: .4s;
-  border: solid 1px var(--han-purple)
+  border: solid 1px rgba(98, 72, 255, 1);
 }
 
 .clock__twelve,
