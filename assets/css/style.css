@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600&family=Poppins&family=Space+Grotesk&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /*=============== VARIABLES CSS ===============*/
 
 :root {
@@ -15,10 +15,10 @@
   --first-color: hsl(250, 72%, 51%);
   --text-color: #65647C;
   --white-color: #fff;
-  --body-color: #fff;
+  --body-color: #F1F6F5;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Oxanium', sans-serif;
+  --body-font: 'Poppins', sans-serif;
 
   /*========== z index ==========*/
   --z-normal: 1;
@@ -29,7 +29,7 @@
 body.dark-theme {
   --title-color: hsl(var(--hue-color), 12%, 95%);
   --text-color: var(--white-color);
-  --body-color: black;
+  --body-color: #0f0e17;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -109,6 +109,7 @@ a {
   color: var(--text-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .list {
@@ -216,6 +217,7 @@ a {
   position: absolute;
   display: flex;
   justify-content: center;
+  color: #F1F6F5;
 }
 
 .clock__hour {
@@ -269,7 +271,7 @@ a {
 }
 
 .clock___text {
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .clock__text {
