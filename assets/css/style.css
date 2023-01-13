@@ -42,7 +42,6 @@ body.dark-theme {
   border-radius: 50%;
   cursor: pointer;
   transition: .4s;
-  border: solid 1px rgba(98, 72, 255, 1);
   color: rgba(98, 72, 255, 1);
 }
 
