@@ -137,11 +137,9 @@ themeButton.addEventListener("click", () => {
 window.addEventListener("load", function () {
 	let buttons = document.querySelectorAll(".list-a");
 
-	for (let i = 0; buttons.length; i++) {
+	for (let i = 0; i < buttons.length; i++) {
 		buttons[i].addEventListener("click", function () {
 			this.style.color = "grey";
 		});
 	}
 });
-
-
