@@ -164,7 +164,7 @@ a {
 }
 
 .name {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -174,7 +174,7 @@ a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	line-height: 2.5rem;
-	padding-bottom: .5rem;
+	padding-bottom: 0.5rem;
 }
 .name span {
 	font-size: 3.25rem;
@@ -326,6 +326,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+	body {
+		height: 100dvh;
+	}
 	.landing {
 		display: flex;
 		flex-direction: column;
