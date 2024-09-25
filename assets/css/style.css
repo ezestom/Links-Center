@@ -156,11 +156,17 @@ a {
 .navbar {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 2.25rem;
+	}
 }
 
 .name {
 	font-size: 2.5rem;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-image: var(--gradient-1);
@@ -168,6 +174,10 @@ a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	line-height: 2.5rem;
+	padding-bottom: .5rem;
+}
+.name span {
+	font-size: 3.25rem;
 }
 
 /*=============== CLOCK ===============*/
